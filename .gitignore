@@ -1,0 +1,11 @@
+# Build output (contains your locally signed app)
+build/
+*.app
+
+# macOS clutter
+.DS_Store
+
+# Never commit signing material
+*.p12
+*.pem
+*.cer
