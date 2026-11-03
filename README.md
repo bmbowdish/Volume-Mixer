@@ -1,5 +1,7 @@
 # Volume Mixer
 
+<img src="Resources/AppIcon-1024.png" width="128" alt="Volume Mixer icon">
+
 Per-app volume and mute from the menu bar. Requires macOS 15+.
 
 ## Build

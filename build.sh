@@ -20,6 +20,7 @@ swiftc -O -swift-version 5 -parse-as-library \
   -o "$APP/Contents/MacOS/VolumeMixer"
 
 cp Info.plist "$APP/Contents/Info.plist"
+cp Resources/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
 
 # Sign with a stable personal certificate so macOS keeps permissions across
 # rebuilds. Falls back to ad-hoc signing (permissions may reset) if that fails.
@@ -34,6 +35,7 @@ fi
 mkdir -p "$HOME/Applications"
 rm -rf "$HOME/Applications/VolumeMixer.app"
 cp -R "$APP" "$HOME/Applications/"
+touch "$HOME/Applications/VolumeMixer.app"
 
 echo "Done: ~/Applications/VolumeMixer.app"
 open "$HOME/Applications/VolumeMixer.app"
